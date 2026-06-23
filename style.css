@@ -1,0 +1,32 @@
+.main{
+    border-radius:60% 90% 70% 70%;
+    background:linear-gradient(135deg,indigo,orange);
+    width:280px;
+    height:280px;
+    filter:blur(10px);
+    opacity:0.9;
+    animation:float 4s ease-in-out infinite;
+}
+.floating-card{
+    padding:10px 20px;
+    position:absolute;
+    border-radius:16px;
+    background-color:black;
+    color:white;
+    z-index: 2;
+    animation:float 4s ease-in-out infinite;
+    }
+    .card-1{top:30px; left:10px;animation-delay:0s;}
+    .card-2{top:130px; left:240px;animation-delay:1.4s;}
+    .card-3{top:230px; left:10px;animation-delay:2.4s;}
+
+@keyframes float {
+    0%,100%
+    {
+        tranform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-16px);
+    }
+}
